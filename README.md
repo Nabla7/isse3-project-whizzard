@@ -1,4 +1,4 @@
-# myapp
+# whizzard
 
 A new Flutter project.
 
