@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'Map.dart';
 
 class LoginPage extends StatefulWidget {
-
   @override
   State<StatefulWidget> createState() => new _State();
 }
@@ -67,8 +66,10 @@ class _State extends State<LoginPage> {
                       color: Colors.blue,
                       child: Text('Login'),
                       onPressed: () {
-                        print(nameController.text);
-                        print(passwordController.text);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyApp()),
+                        );
                       },
                     )),
                 Container(
