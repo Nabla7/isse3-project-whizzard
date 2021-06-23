@@ -7,12 +7,40 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: Text("Second Route"),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
+      body: Container(
+        alignment: Alignment.bottomCenter,
+        child: Row(
+
+          children: <Widget>[
+            Container(
+                height: 50,
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: ButtonTheme(
+                  minWidth: 205,
+                    child: RaisedButton(
+                      textColor: Colors.white,
+                      color: Colors.blue,
+                      child: Text('Requirments'),
+                      onPressed: () {
+                        //TODO
+                      },
+                    )
+                )),
+            Container(
+                height: 50,
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: ButtonTheme(
+                    minWidth: 205,
+                    child: RaisedButton(
+                      textColor: Colors.white,
+                      color: Colors.blue,
+                      child: Text('New Toilet'),
+                      onPressed: () {
+                        //TODO
+                      },
+                    )
+                )),
+          ],
         ),
       ),
     );
