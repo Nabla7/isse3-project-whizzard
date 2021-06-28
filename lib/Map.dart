@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'filter.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -16,13 +17,16 @@ class MyApp extends StatelessWidget {
                 height: 50,
                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: ButtonTheme(
-                  minWidth: 205,
+                  minWidth: 196,
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.blue,
                       child: Text('Requirments'),
                       onPressed: () {
-                        //TODO
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyApp1()),
+                        );
                       },
                     )
                 )),
@@ -30,7 +34,7 @@ class MyApp extends StatelessWidget {
                 height: 50,
                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: ButtonTheme(
-                    minWidth: 205,
+                    minWidth: 196,
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.blue,
