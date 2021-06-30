@@ -29,11 +29,10 @@ class CheckboxWidget extends StatefulWidget {
 class CheckboxWidgetState extends State {
 
   Map<String, bool> values = {
-    'Apple': false,
-    'Banana': false,
-    'Cherry': false,
-    'Mango': false,
-    'Orange': false,
+    'Squatting toilet': false,
+    'Child toilet': false,
+    'Disability': false,
+    'Bidet/ Washlet': false,
   };
 
   var tmpArray = [];
