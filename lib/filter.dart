@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Map.dart';
 
 class MyApp1 extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class MyApp1 extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Flutter Multiple Checkbox Example"),
+            title: Text("Toilet Requirement Lists"),
           ),
           body: SafeArea(
               child : Center(
@@ -59,8 +60,13 @@ class CheckboxWidgetState extends State {
     return Column (children: <Widget>[
 
       RaisedButton(
-        child: Text(" Get Selected Checkbox Items ", style: TextStyle(fontSize: 18),),
-        onPressed: getCheckboxItems,
+        child: Text(" Find toilet based on requirements ", style: TextStyle(fontSize: 18),),
+        onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyApp()),
+          );
+      },
         color: Colors.deepOrange,
         textColor: Colors.white,
         splashColor: Colors.grey,

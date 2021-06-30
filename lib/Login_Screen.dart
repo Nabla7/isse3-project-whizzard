@@ -14,7 +14,7 @@ class _State extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Login Screen App'),
+          title: Text('Toilet Finder App'),
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
@@ -24,7 +24,7 @@ class _State extends State<LoginPage> {
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'Codeplayon',
+                      'Whizzard',
                       style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.w500,
