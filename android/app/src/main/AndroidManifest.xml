@@ -3,6 +3,10 @@
    <application
         android:label="whizzard"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBka07wEd7liM5TgnFNehIOPdMep5YY2cs"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

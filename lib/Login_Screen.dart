@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whizzard/google_map.dart';
 import 'Map.dart';
 
 class LoginPage extends StatefulWidget {
@@ -68,7 +69,7 @@ class _State extends State<LoginPage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyApp()),
+                          MaterialPageRoute(builder: (context) => GoogleMapp()),
                         );
                       },
                     )),
