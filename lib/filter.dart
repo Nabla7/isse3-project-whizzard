@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Map.dart';
+import 'package:whizzard/google_map.dart';
 
 class MyApp1 extends StatelessWidget {
   @override
@@ -63,7 +63,7 @@ class CheckboxWidgetState extends State {
         onPressed: (){
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => MyApp()),
+            MaterialPageRoute(builder: (context) => GoogleMapp()),
           );
       },
         color: Colors.deepOrange,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whizzard/google_map.dart';
-import 'Map.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -16,6 +15,7 @@ class _State extends State<LoginPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Toilet Finder App'),
+
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
