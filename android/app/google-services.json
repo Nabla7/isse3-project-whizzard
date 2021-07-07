@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "378675442926",
+    "project_id": "whizzard-317502",
+    "storage_bucket": "whizzard-317502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378675442926:android:23beeb1c2c67c713b5afff",
+        "android_client_info": {
+          "package_name": "com.example.whizzard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378675442926-ri97r43gdlsli93uaj7n2eqjjm6kmtu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whizzard",
+            "certificate_hash": "370f8c84831a30a962894ad1d80b21985f525de3"
+          }
+        },
+        {
+          "client_id": "378675442926-m9fh7jbvreglanjgd50oe226j62tij12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJYvelj0gCg6JBNsdY9pwoyvgoZzYNRt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378675442926-m9fh7jbvreglanjgd50oe226j62tij12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
