@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import 'filter.dart';
+
 
 class GoogleMapp extends StatefulWidget {
   @override
@@ -10,8 +10,8 @@ class GoogleMapp extends StatefulWidget {
 
 class _MyAppState extends State<GoogleMapp> {
   late GoogleMapController mapController;
-
-  final LatLng _center = const LatLng(45.521563, -122.677433);
+  List<Marker> myMarker = [];
+  final LatLng _center = const LatLng(35.01667,135.96667);
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -21,16 +21,14 @@ class _MyAppState extends State<GoogleMapp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Toilet Map'),
-          backgroundColor: Colors.green[700],
-        ),
         body: GoogleMap(
           onMapCreated: _onMapCreated,
           initialCameraPosition: CameraPosition(
             target: _center,
             zoom: 11.0,
           ),
+          markers: Set.from(myMarker),
+          onTap: _handleTap,
         ),
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -66,5 +64,16 @@ class _MyAppState extends State<GoogleMapp> {
         )
       ),
     );
+  }
+
+  _handleTap(LatLng tappedPoint){
+    setState(() {
+      myMarker.add(
+        Marker(
+          markerId: MarkerId(tappedPoint.toString()),
+          position: tappedPoint,
+        )
+      );
+    });
   }
 }
